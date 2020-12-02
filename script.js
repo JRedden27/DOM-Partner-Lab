@@ -43,7 +43,23 @@
 //    document.getElementById("list").innerHTML += `<li>${member}</li>`
 // }
 
-let question = prompt("What is your name?");
-let header = document.createElement("header");
-header.innerHTML += `${question}'s Resume!`;
-document.querySelector('body').appendChild(header);
+// let question = prompt("What is your name?");
+// let header = document.createElement("header");
+// header.innerHTML += `${question}'s Resume!`;
+// document.querySelector('body').appendChild(header);
+
+let skills = ["Hacking", "Skating", "Flying"];
+let answer = prompt("Ordered or unordered?");
+
+if (answer === "Ordered") {
+    let orderedList = document.createElement('ol');
+    for (let i = 0; i < skills.length; i++) {
+        orderedList.innerHTML += `<li>${skills[i]}</li>`
+    }
+    document.querySelector('body').appendChild(orderedList);
+} else if (answer === "Unordered") {
+    let unorderedList = document.getElementById("list").innerHTML += `<ul></ul>`
+    for (let i = 0; i < skills.length; i++) {
+        document.querySelector('ul').innerHTML += `<li>${skills[i]}</li>`
+    }
+}
