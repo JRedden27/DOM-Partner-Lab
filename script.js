@@ -34,6 +34,11 @@
 
 // document.getElementById("logo").appendChild(img);
 
-let color = prompt("What color do you want");
+//let color = prompt("What color do you want");
 
-document.getElementById("color").style.backgroundColor = color;
+//document.getElementById("color").style.backgroundColor = color
+
+for ( let i = 0; i < 4; i++){
+   let member = prompt("Who's in class today?");
+   document.getElementById("list").innerHTML += `<li>${member}</li>`
+}
