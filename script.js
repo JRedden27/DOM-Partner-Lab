@@ -15,21 +15,25 @@
 // console.log(array); // address to he location of the array
 // console.log(array === array2);
 
-const img = document.createElement('img');
+// const img = document.createElement('img');
 
-let logo = prompt("Small or large?");
+// let logo = prompt("Small or large?");
 
-if (logo === "Small") {
-    document.getElementById("logo").innerHTML += `<img src="http://placekitten.com/400/250">`;
+// if (logo === "Small") {
+//     document.getElementById("logo").innerHTML += `<img src="http://placekitten.com/400/250">`;
 
-    // img.src = "http://placekitten.com/200/300";
-    // img.height = 400;
-    // img.width = 250;
-} else if (logo === "Large") {
-    document.getElementById("logo").innerHTML += `<img src="http://placekitten.com/800/500">`;
-    // img.src = "http://placekitten.com/200/300";
-    // img.height = 800;
-    // img.width = 500;
-}
+//     // img.src = "http://placekitten.com/200/300";
+//     // img.height = 400;
+//     // img.width = 250;
+// } else if (logo === "Large") {
+//     document.getElementById("logo").innerHTML += `<img src="http://placekitten.com/800/500">`;
+//     // img.src = "http://placekitten.com/200/300";
+//     // img.height = 800;
+//     // img.width = 500;
+// }
 
-document.getElementById("logo").appendChild(img);
+// document.getElementById("logo").appendChild(img);
+
+let color = prompt("What color do you want");
+
+document.getElementById("color").style.backgroundColor = color;
