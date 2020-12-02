@@ -38,7 +38,12 @@
 
 //document.getElementById("color").style.backgroundColor = color
 
-for ( let i = 0; i < 4; i++){
-   let member = prompt("Who's in class today?");
-   document.getElementById("list").innerHTML += `<li>${member}</li>`
-}
+// for ( let i = 0; i < 4; i++){
+//    let member = prompt("Who's in class today?");
+//    document.getElementById("list").innerHTML += `<li>${member}</li>`
+// }
+
+let question = prompt("What is your name?");
+let header = document.createElement("header");
+header.innerHTML += `${question}'s Resume!`;
+document.querySelector('body').appendChild(header);
